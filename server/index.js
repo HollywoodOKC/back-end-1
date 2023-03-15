@@ -6,7 +6,7 @@ let PORT = 4000;
 app.use(express.json());
 app.use(cors());
 
-app.get("/api/users", (req, res) => {
+app.get("/users", (req, res) => {
   let friends = ["Nitin", "Eric", "Cameron", "Riley"];
   res.status(200).send(friends);
 })
