@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-let port = 4000;
+let PORT = 4000;
 
 app.use(express.json());
 app.use(cors());
@@ -15,4 +15,4 @@ app.get("/weather/:temperature", (req, res) => {
   res.status(200).send(phrase);
 })
 
-app.listen(port, () => console.log(`Server running on Port ${port}`));
+app.listen(PORT, () => console.log(`Server running on Port ${PORT}`));
